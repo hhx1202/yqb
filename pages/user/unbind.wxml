@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">{{title}}</view>
+  <view class="LoginView">
+    <view><button class="loginBtn" bindtap="loginBtnClick">解绑</button></view>
+  </view>
+</view>

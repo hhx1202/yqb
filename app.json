@@ -1,14 +1,20 @@
 {
   "pages":[
+    
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/user/index",
+    "pages/user/bind",
+    "pages/user/unbind",
+    "pages/youhueima/list",
+    "pages/youhueima/list_use",
+    "pages/youhueima/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#60B8F4",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black",
-	"navigationBarTitleText": "乐清保"
+    "navigationBarTextStyle":"white",
+    "navigationBarTitleText": "乐清保"
   },
   "tabBar": {
     "color": "#999",
@@ -23,7 +29,7 @@
         "selectedIconPath": "assets/home-active.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/user/index",
         "text": "我的",
         "iconPath": "assets/profile.png",
         "selectedIconPath": "assets/profile-active.png"

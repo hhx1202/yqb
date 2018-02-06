@@ -1,4 +1,12 @@
 /**index.wxss**/
+page{
+  background-color: #60B8F4;
+}
+
+.container {
+   align-items: center;
+} 
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -18,4 +26,18 @@
 
 .usermotto {
   margin-top: 200px;
+}
+.photo{
+  width: 234px;
+  height: 245px;
+  margin-top:200rpx;
+}
+
+.btn_scan{
+  width:300px;
+  height:45px;
+  display: block;
+  background-color: #005BAC;
+  color: white;
+  border-width: 0px;
 }

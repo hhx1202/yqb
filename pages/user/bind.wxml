@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">{{title}}</view>
+  <view class="LoginView">
+    <view><input class="input" name="username" bindinput="bindInputUsername" placeholder="请输入帐号"/></view>
+    <view><input class="input" name="password" bindinput="bindInputPassword" password placeholder="请输入密码"/></view>
+    <view><button class="loginBtn" bindtap="loginBtnClick">微信绑定</button></view>
+  </view>
+</view>

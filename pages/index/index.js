@@ -9,38 +9,26 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
   bindViewScan: function () {
     // 只允许从相机扫码
     wx.scanCode({
       onlyFromCamera: true,
       success: (res) => {
-        console.log(res)
-        
-        wx.showToast({
-          title: res.result,
-          icon: 'success',
-          duration: 2000
-        })
+        var code = res.result;
+        wx.navigateTo({ url: "../youhueima/list_use?code=" + code })
       }
-    })
-  },
-  showOpenID:function(){
-    app.getUserOpenID(function (openid) {
-      console.log('index\t showOpenID openid:' + app.globalData.openid)
     })
   },
   onLoad: function () {
     var that = this;
     console.log('index\tonLoad')
-    app.getUserInfo(function (userInfo) {
-      console.log(userInfo)
-      that.setData({ userInfo: userInfo, hasUserInfo:true})
+    app.getAdminInfo(function (adminInfo) {
+      console.log(adminInfo)
+      if (adminInfo.adminid == undefined || adminInfo.adminid == '') {
+        //wx.redirectTo({ url: "../bind/bind" })
+      }
+      //app.alert(adminInfo.openid")
+      //that.setData({ userInfo: userInfo, hasUserInfo:true})
     })
   }
 })

@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <view class="userinfo-text"><text>乐清支公司</text></view>
+  </view>
+ 
+  
+  <view class="info_list">
+    <navigator url="../youhueima/list">
+      <view class="weui_cell">
+        <view class="weui_cell_hd"><image src="../../assets/text.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 已使用兑换码 </view>
+            </view>
+            <view class="view_arrow"><image class="with_arrow" src="../../images/icon-arrowdown.png"></image></view>
+      </view>
+    </navigator>
+    <navigator url="../user/unbind">
+      <view class="weui_cell">
+        <view class="weui_cell_hd"><image src="../../assets/link.png"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> 小程序解绑 </view>
+            </view>
+            <view class="view_arrow"><image class="with_arrow" src="../../images/icon-arrowdown.png"></image></view>
+      </view>
+    </navigator>
+  </view>
+</view>

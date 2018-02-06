@@ -1,0 +1,19 @@
+/**index.wxss**/
+page{
+  background-color: #FFFFFF;
+}
+
+.container {
+   align-items: center;
+}
+
+.title{height:50rpx;margin-top:50rpx;font-size:20px;}
+.LoginView{width: 95%}
+.loginBtn{width:100%;margin-top: 50px; background-color: #005BAC;color: white;}
+
+.input{height: 25px;line-height: 25px;margin-top:40rpx;
+  border: 1px solid #aaa;
+  height:35px;
+  text-indent: 10rpx;
+  padding-left:10rpx;
+}

@@ -1,0 +1,29 @@
+page{
+    background: #fff;
+    font-size: 14px;
+}
+.container .item{
+    margin: 5px 0;
+    padding:10px 0;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.container .item .title{
+    margin: 5px 10px;
+    overflow: hidden;
+    display: block;
+    color: #333;
+    font-size: 20px;
+}
+
+.container .item .time{
+    margin-right: 10px;
+    color: #939393;
+    float: right;
+    
+}
+.container .item .type{
+    margin-left: 10px;
+    color: #939393;
+    float: left;
+}
