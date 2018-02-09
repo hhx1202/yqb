@@ -1,4 +1,23 @@
 <view class="container">
-
-{{id}}
+  <view class="detail">
+    <view class="item">
+      <text class="txt">兑换码</text>
+      <text class="val">{{detail.code}}</text>
+    </view>
+    <view class="item">
+      <text class="txt">类型</text>
+      <text class="val">{{detail.sort}}</text>
+    </view>
+    <view class="item">
+      <text class="txt">有效期至</text>
+      <text class="val">{{detail.overtime}}</text>
+    </view>
+    <view class="item">
+      <text class="txt">关联车牌号</text>
+      <text class="val">{{detail.carno}}</text>
+    </view>
+  </view>
+  <view bindtap="bindViewUse">
+    <button class="btn_use">使用</button>
+  </view>
 </view>

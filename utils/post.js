@@ -1,5 +1,12 @@
-const app2 = getApp()
-
+/**
+ * 使用方法
+ * const post = require('../../utils/post')
+ * var postData = {}
+ * post('https://www.baidu.com/', postData)
+ * .then(res => {
+ * ... 这里就是success事件的内容
+ * })
+*/
 module.exports = (url, data) => {
   wx.showLoading({ title: 'Loading...' })
   return new Promise((resolve, reject) => {

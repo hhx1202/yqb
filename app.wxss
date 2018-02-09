@@ -1,8 +1,14 @@
 /**app.wxss**/
+@import "./component/toastText/toastText.wxss"; 
+
+page{
+  background-color: #EBEBEB;
+}
 .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+  background-color: #EBEBEB;
 } 

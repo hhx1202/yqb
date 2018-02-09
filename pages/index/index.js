@@ -15,20 +15,19 @@ Page({
       onlyFromCamera: true,
       success: (res) => {
         var code = res.result;
-        wx.navigateTo({ url: "../youhueima/list_use?code=" + code })
+        wx.navigateTo({ url: "../youhueima/list_scan?code=" + code })
       }
     })
   },
   onLoad: function () {
+    console.log('index onLoad')
     var that = this;
-    console.log('index\tonLoad')
     app.getAdminInfo(function (adminInfo) {
       console.log(adminInfo)
-      if (adminInfo.adminid == undefined || adminInfo.adminid == '') {
-        //wx.redirectTo({ url: "../bind/bind" })
+      console.log('adminid:' + adminInfo.adminid)
+      if (!adminInfo.adminid) {
+        wx.redirectTo({ url: "../user/bind" })
       }
-      //app.alert(adminInfo.openid")
-      //that.setData({ userInfo: userInfo, hasUserInfo:true})
     })
   }
 })

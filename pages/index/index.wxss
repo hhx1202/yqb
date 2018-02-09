@@ -1,8 +1,4 @@
 /**index.wxss**/
-page{
-  background-color: #60B8F4;
-}
-
 .container {
    align-items: center;
 } 

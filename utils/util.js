@@ -14,6 +14,27 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const timestampToDate = timestamp => {
+  const date = new Date(timestamp * 1000);
+  const Y = date.getFullYear() + '-';
+  const M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+  const D = date.getDate() + ' ';
+  return Y+M+D;
+}
+
+const timestampToTime = timestamp => {
+  const date = new Date(timestamp * 1000);
+  const Y = date.getFullYear() + '-';
+  const M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+  const D = date.getDate() + ' ';
+  const h = date.getHours() + ':';
+  const m = date.getMinutes() + ':';
+  const s = date.getSeconds();
+  return Y+M+D+h+m+s;
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  timestampToDate: timestampToDate,
+  timestampToTime: timestampToTime
 }

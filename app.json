@@ -1,12 +1,12 @@
 {
   "pages":[
-    
     "pages/index/index",
+    "pages/youhueima/list_scan",
     "pages/user/index",
     "pages/user/bind",
     "pages/user/unbind",
     "pages/youhueima/list",
-    "pages/youhueima/list_use",
+    
     "pages/youhueima/detail"
   ],
   "window":{
