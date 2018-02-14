@@ -6,18 +6,22 @@
     </view>
     <view class="item">
       <text class="txt">类型</text>
-      <text class="val">{{detail.sort}}</text>
+      <text class="val">{{detail.sortname}}</text>
     </view>
     <view class="item">
       <text class="txt">有效期至</text>
-      <text class="val">{{detail.overtime}}</text>
+      <text class="val">{{detail.overtime__NAME}}</text>
     </view>
     <view class="item">
       <text class="txt">关联车牌号</text>
       <text class="val">{{detail.carno}}</text>
     </view>
+    <view class="item">
+      <text class="txt">兑换码状态</text>
+      <text class="val">{{detail.statename}}</text>
+    </view>
   </view>
-  <view bindtap="bindViewUse">
+  <view wx:if="{{canUse}}" bindtap="bindViewUse">
     <button class="btn_use">使用</button>
   </view>
 </view>

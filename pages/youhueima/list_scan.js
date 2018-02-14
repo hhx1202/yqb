@@ -3,12 +3,11 @@ const fetch = require('../../utils/fetch')
 
 Page({
   data: {
-      
+    showNoData: false,
+    total: 0,
+    list: null
   },
   onLoad: function(options) {
-    console.log('list_scan')
-      //console.log(options.code)
-      //console.log(app.globalData.adminInfo.openid)
     var code = options.code; // 客户的二维码
       // 如何查询到单个兑换码，那么直接跳到详情页面
     //var code = 'http://weixin.qq.com/q/ckizCJHlO_lCI9Gm3mA6'
@@ -23,15 +22,19 @@ Page({
         var total = res.data.total
         var list = res.data.list
         console.log(list)
+        if (total < 1) {
+          this.data.showNoData = true
+        }
+
         if (total == 10){
           // 单个走你
           var id = list[0]['id']
           //wx.navigateTo({ url: "detail?id=" + id })
         }else{
           this.setData({
-            list:list,
-            total:total
-          })
+            showNoData: this.data.showNoData,
+            list: list
+          });
         }
       }else{
         app.alert(res.data.message)

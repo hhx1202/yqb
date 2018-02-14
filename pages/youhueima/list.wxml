@@ -1,12 +1,18 @@
 <view class="container">
-  <block wx:for="{{list}}">
+  <block wx:for="{{list}}" wx:key="id">
     <navigator url="detail?id={{item.id}}">
     <view class="item">
         <text class="title">{{item.code}}</text>
-        <text class="type">类型：{{item.sort}}</text>
+        <text class="type">类型：{{item.sortname}}</text>
         <text class="time">车牌：{{item.carno}}</text>
         <view class="arrow"><image src="../../assets/arrow.png"></image></view>
     </view>
     </navigator>
   </block>
+  <view wx:if="{{showNoData}}">
+    <view class="nodata">
+      <image src="../../assets/nodata.png"></image>
+      <text>没有数据</text>
+    </view>
+  </view>
 </view>

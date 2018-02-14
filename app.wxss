@@ -11,4 +11,24 @@ page{
   justify-content: space-between;
   box-sizing: border-box;
   background-color: #EBEBEB;
-} 
+}
+
+.nodata {
+  width: 100%;
+  height:200rpx;
+  margin-top:300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nodata image{
+  text-align: center;
+  width:64px;
+  height: 64px;
+}
+.nodata text{
+  height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color:#939393;
+}

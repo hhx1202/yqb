@@ -10,9 +10,9 @@ App({
     bind: 'https://yq.wzcpic.com/yqb/api/bind.php',
     unbind: 'https://yq.wzcpic.com/yqb/api/unbind.php',
     list: 'https://yq.wzcpic.com/yqb/api/list.php',
+    scan: 'https://yq.wzcpic.com/yqb/api/list_scan.php',
     detail: 'https://yq.wzcpic.com/yqb/api/detail.php',
-    use: 'https://yq.wzcpic.com/yqb/api/use.php',
-    scan: 'https://yq.wzcpic.com/yqb/api/list_scan.php'
+    use: 'https://yq.wzcpic.com/yqb/api/use.php'
   },
   globalData: {
     title:'乐清保',
